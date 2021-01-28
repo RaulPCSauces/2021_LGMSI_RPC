@@ -1,0 +1,25 @@
+div{
+	height: 300px;
+	width:300px;
+	display: inline-block;
+	border: 5px solid black;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	margin: 10px;
+}
+
+div:nth-child(1){
+	background-image: url("../images/puntonegro.png");
+	background-position: center;
+} 
+
+div:nth-child(2){
+	background-image: url("../images/puntonegro.png"), url("../images/puntonegro.png");
+	background-position: 25% 60%, 15% 87%;
+
+}
+
+div:nth-child(3){
+	background-image: url("../images/puntonegro.png", url("../images/puntonegro.png"), url("../images/puntonegro.png");
+	background-position: 25%,25%,50%,50%,75%,75%;
+}

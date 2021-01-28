@@ -1,0 +1,59 @@
+
+table{
+	width: 75%;
+	margin: auto;
+	border-spacing: 10px, 30px;
+	border-collapse: collapse;
+	border-collapse: separate;
+	border-spacing: 15px;
+}
+
+ th,td{
+  border: 1px solid black;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	width: 50px;
+	height: 50px;
+}
+
+tr {
+	background-color:white;	
+}
+
+.gb {
+	background-color:cyan;
+}
+
+#fila{
+	background-color:cyan;
+}
+
+#listas{
+  background-color: #ACD7E5;
+}
+
+tr:nth-child(3){
+ background-color: cyan;
+}
+
+tr:nth-child(4){
+ background-color: #ACD7E5;
+}
+
+tr:nth-child(5){
+ background-color: cyan;
+}
+
+ @font-face {
+	 font-family: 'Goldman-Regular';
+	 src:url('../fonts/Goldman-Regular.ttf')
+ }
+ 
+th:nth-child(5):hover {
+  background-color: #A64B00;
+}

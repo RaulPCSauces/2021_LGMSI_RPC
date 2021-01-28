@@ -1,0 +1,57 @@
+﻿@font-face {
+	font-family: fuentesolid;
+	src: url(fa-solid-900.woff);
+}
+
+ul.topmenu li{
+	display: inline;
+	word-spacing:0px;
+}
+
+.topmenu{
+	background-color:grey;
+	text-align:center;
+	color: #FFFFFF;
+	word-spacing:50px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+div.sidemenu ul > li{
+	margin:5px;
+	padding:15px;
+	background-color:#808080;
+}
+
+div.sidemenu ul {
+	list-style-type:none;
+}
+
+div.sidemenu{
+	width: 300px;
+	float: left;
+	height: 100%;
+	position:fixed;
+}
+
+.content{
+	margin-left:325px;
+	padding:0px 10px;
+}
+
+body{
+	border-style:dashed;
+	border-color: grey;
+	padding: 2px;
+}
+
+.noticias:before{
+	content: "fonts/fontawesome/webfonts/favicon.ico";
+}
+
+p{
+	font-family: fuentesolid;
+}

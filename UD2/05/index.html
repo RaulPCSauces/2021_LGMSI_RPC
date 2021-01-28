@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="formulariodearte">
+		<meta name="Raul Perez" content=""
+		<title>HTML 05 Raul Perez Colino</title>
+	</head>
+	<body>
+		<h1> Blog de arte </h1>
+			<p> Bienvenidos al blog de arte. Aqui se eligen tus gustos de arte, elige lo que mas te guste </p>
+		<form action="registro.php" method="get">
+				<div>
+					<label for="nombreusuario">Introduce tu numero de usuario:</label>
+					<input type="text" id="nombreusuario" name="nombreusuario">
+				</div>
+				<div>
+					<label for="contraseña">Contraseña</label>
+					<input type="password" id="contraseña" name="contraseña" minlength="8" required>
+				</div>
+				<input type="reset" value="Reset">
+				<input type="submit" value="Sign in">
+				<p>Puedes buscar lo que quieras con nuestro buscador interno</p>
+				<label for="busqueda">Busqueda de la pagina</label>
+				<input type="search" id="busqueda" name="busqueda" aria-label="puedes buscar a traves de la pagina">
+				<button>Search</button>
+				<p> En este blog de arte estamos interesados en otros blogs de arte o páginas de museos, si lo deseas<br>
+				puedes mandarnos enlaces de ellos</p> 
+				<label for="url">Escribe aqui tu enlace</label>
+				<input type="url" name="url" id="url" placeholder="https://ejemplo.com" pattern="https://.*" size="30" required>
+				
+			<fieldset>
+				<legend>El tipo de arte que te gusta</legend>
+				<p><label for="realismo">REALISMO<input type="radio" name="realismo" id="realismo" ></label></p>
+				<p><label for="hiperrealismo">HIPERREALISMO<input type="radio" name="hiperrealismo" id="hiperrealismo" ></label></p>
+				<p><label for="expresionismo">EXPRESIONISMO<input type="radio" name="expresionismo" id="expresionismo" ></label></p>
+				<p><label for="retrato">RETRATO<input type="radio" name="retrato" id="retrato" ></label></p>
+				<p><label for="bodegones">BODEGONES<input type="radio" name="bodegones" id="bodegones" ></label></p>
+			</fieldset>
+			<fieldset>
+				<legend>numero de museos a los que has ido en los ultimos años</legend>
+				<label for="museos">Visitas a museos de 0 a 50</label>
+				<input type="number" id="museos" name="museos" min="0" max="50">
+			</fieldset>
+			<fieldset>
+				<legend>Aportaciones de usuarios</legend>
+				<p>Tu tambien puedes aportar tus propias creaciones a nuestro blog, solo envianoslas<br>
+				solo imagenes en PNG o JPEG</p>
+				<label for="aportaciones">Mandad aportaciones por aqui</label>
+				<input type="file" id="aportaciones" name="aportaciones" accept="image/png, image/jpeg">
+				
+			</fieldset>
+			<fieldset>
+				<legend>Selecciona un color</legend>
+				<p>En blog de arte pensamos que tu color favorito define tu gusto artistico</p>
+				<label for="colorfavorito">Elige tu color favorito</label>
+				<input type="color" id="colorfavorito" name="colorfavorito" value="#ff0000"><br><br>
+				<input type="submit">
+			</fieldset>
+			<fieldset>
+				<legend>Museo del Padro</legend>
+				<p>Estamos asociados a la pagina web del Museo del Padro, para acceder haz click en la foto de Velazquez</p>
+				
+			</fieldset>
+			<fieldset>
+				<legend>Artistas favoritos</legend>
+				<p><label for="nombrebotón1">PABLO PICASSO</label><input type="checkbox" name="nombrebotón1" id="nombrebotón1"></p>
+				<p><label for="nombrebotón2">JOAQUÍN SOROYA</label><input type="checkbox" name="nombrebotón2" id="nombrebotón2"></p>
+				<p><label for="nombrebotón3">JOAN MIRÓ</label><input type="checkbox" name="nombrebotón3" id="nombrebotón3"></p>
+				<p><label for="nombrebotón4">CLAUDE MONET</label><input type="checkbox" name="nombrebotón4" id="nombrebotón4"></p>
+			</fieldset>
+			<fieldset>
+				<legend>Interés en el arte por parte de la sociedad</legend>
+				<p><label for="interes">Interés<input id="interes" name="interes" type="range" min="1" max="10"></label></p>
+			</fieldset>
+			<fieldset>
+				<legend>Datos personales</legend>
+				<p> Si lo deseas y quieres recibir mas informacion<br>
+				    sobre el mundo de arte puedes recibir en el<br>
+					formato que quieras mas informacion sobre arte <br>
+				</p>
+				<p> ¿Donde te gustaria recibirla? </p>
+				<select>
+					<option value="revista">Revista por correo</option>
+					<option value="youtube">Videos de Youtube</option>
+					<option value="patreon">Videos de Patreon</option>
+					<option value="libro">Libros</option>
+				</select>
+				<p>En caso de haber elegido revista,solo hacemos envios<br>
+				   a Castilla y Leon ¿ en que provincia resides?</p>
+				<label for="provincias">Escribe tu provincia de residencia</label>
+				<input type="text" name="provincias" id="provincias">
+				<datalist id="listaprovincias">
+					<option value="Leon">
+					<option value="Salamanca">
+					<option value="Zamora">
+					<option value="Valladolid">
+					<option value="Segovia">
+					<option value="Soria">
+					<option value="Avila">
+					<option value="Burgos">
+					<option value="Palencia">
+				</datalist>
+				<h2>Puedes mandarnos tus opiniones sobre nuestro material por aqui</h2>
+				<textarea name="observaciones" rows="9" cols="20">
+				</textarea>
+				<h2>Escribe aqui tus datos personales para hacer un envio</h2>
+					<label for="nombre">Nombre</label>
+					<input name="nombre" type="text" value="Escribe aqui tu nombre" id="nombre">
+					<label for="apellidos">Apellidos</label>
+					<input name="apellidos" type="text" value="Escribe aqui tus apellidos" id="apellidos">
+				<h2>Indicanos aqui un telefono de contacto</h2>
+					<label for="telefono">Tu telefono de contacto</label>
+					<input type="tel" name="telefono" id="telefono" placeholder="escribe aqui tu telefono">
+				<h2>Indicanos aqui cuando quieres recibir la revista o la opcion escogida antes</h2>
+					
+				<h3>Elige una semana para poder hacer la entrega</h3>
+					<label for="semana">Elige una semana entre 2020 y 2025</label>
+					<input type="week" name="semana" id="semana" min="2020-W10" max="2025-W26">
+				<h3>Elige aqui un mes para poder hacer la entrega</h3>
+					<label for="mes">Elige aqui el mes </label>
+					<input type="month" id="mes" name="mes" min="2020-01" value="2025-05">
+				<h3> Elige aqui una hora para poder hacer la entrega</h3>
+					<label for="hora">Elige la hora aqui</label>
+					<input type="time" id="hora" name="hora" min="09:00" max="21:00" required>
+				<h3> Escribenos un correo electronico de contacto y un telefono</h3>
+					<label for="email">Escribe tu mail aqui</label>
+					<input type="email" id="email" size="30" required>
+			</fieldset>
+			<fieldset>
+				<legend>Click en velazquez para mandar el formulario</legend>
+					<label for="suscripcion">suscribete aqui</label>
+					<input type="image" id="suscripcion" src="images/velazquez.jpg" alt="Submit" width="48" height="48">
+			</fieldset>
+		</form>	
+	</body>
+</html>

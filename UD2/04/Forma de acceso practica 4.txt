@@ -1,0 +1,16 @@
+<fieldset style="backbround-color: rgb(241,194,156) ;">
+	<legend> Formas de acceso </legend>
+	... poner aqui lo del css que sirve para eliminar los puntos de la lista de abajo"
+	<ul>
+		<li> <imput type="radio" name="tipoprueba" id="directo">
+			<ul>
+				<li>Bachellerato modalidad</li>
+				<li>Bachillerato experimental</li>
+				<li>COU Opcion</li>
+				<li>Titulo de tecnico(FPGM)</li>
+				<li>Titulacion universitaria</li>
+				<li>Otros (Especifique)
+			</ul>
+		</li>
+		</li><label for="Prueba"><input type="radio" name="Tipoprueba" id="prueba">Prueba Libre</label></li>
+          <                

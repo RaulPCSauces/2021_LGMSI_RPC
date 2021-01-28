@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>HTML 04 Raul Perez Colino</title>
+	
+	</head>
+	
+	<body>
+		
+		<form action="registro.php" method="get">
+		
+					<h1> HOJA DE INSCRIPCION </h1>
+
+			<h2> EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR </h2>
+			
+			<fieldset>
+				
+					<legend> Información Personal </legend>
+					
+						<table>
+						
+						
+							<tr>
+							
+								<th>Nombre</th>
+								
+								<td>Apellidos</td>
+								
+								<td>DNI</td>
+								
+							</tr>
+						
+					
+							
+							<tr>
+								
+								<th> <input name= "Nombre" type="text" id="Nombre"> </th>
+								
+								<td> <input name="Apellidos" type="text" id="Apellidos"> </td>
+								
+								<td> <input name="DNI" type="text" id="DNI"> </td>
+								
+							</tr>
+						
+							<tr>
+							
+								<th>	Localidad de nacimiento</th>
+										
+								<td>	Provincia</td>
+										
+								<td>	Fecha de nacimiento </td>
+							
+							</tr>
+						
+							<tr>
+							
+								<th>  <input name="localidad" type="text" id="localidad"> </th>
+								
+								<td>  <select>
+									
+									<option value="Salamanca">Salamanca</option>
+									
+									<option value="Zamora">Zamora</option>
+									
+									<option value="Leon">Leon</option>
+									
+									<option value="Valladolid">Valladolid</option>
+									
+									<option value="Avila">Ávila</option>
+									
+									<option value="Burgos">Burgos</option>
+									
+									<option value="Palencia">Palencia</option>
+									
+									<option value="Soria">Soria</option>
+								
+									  </select>
+								</td>
+								
+								<td> <input name="fechanacimiento" type="date" name="fechanacimiento">
+							
+							</tr>
+							
+							<tr>
+										
+								<th>Direccion</th>
+										
+								<td>Codigo Postal</td>
+								
+							</tr>
+							
+							
+							<tr>
+										
+								<input name= "Direccion" type="text" id="Direccion">
+										
+								<input name= "CodigoPostal" type="text" id="CodigoPostal">
+									
+							</tr>		
+								
+							
+						</table>
+			
+			</fieldset>
+			
+			<fieldset>	
+				<legend style="backbround-color: rgb(241,194,156) ;">Forma de acceso</legend>
+						<ul>
+				<li><label for="tipo de acceso"><input type="radio" name="tipo" id="acceso">Tipo de acceso</label>
+					<ul>
+						<li>Bachellerato modalidad</li>
+						<li>Bachillerato experimental</li>
+						<li>COU Opcion</li>
+						<li>Titulo de tecnico(FPGM)</li>
+						<li>Titulacion universitaria</li>
+						<li>Otros (Especifique)</li>
+					</ul>
+				</li>
+				<li><label for="Prueba"><input type="radio" name="Tipoprueba" id="prueba">Prueba Libre</label></li>
+			</fieldset>
+			<fieldset>
+				<legend>Documentos adjuntados</legend>
+				
+			</fieldset>
+			
+		
+		</form>
+	
+	</body>
+
+</html>

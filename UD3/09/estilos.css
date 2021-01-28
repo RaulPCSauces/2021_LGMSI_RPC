@@ -1,0 +1,28 @@
+h1{ 
+	font-weight:bold;
+	text-decoration:underline;
+	text-decoration-style: wavy;
+	color: Crimson;
+	text-transform:capitalize;
+	font-size:3em;
+	letter-spacing: 5px;
+
+}
+
+/*lista 1 2 y 3 tienen en comun el border*/ 
+p {
+background-color: crimson;
+}
+
+.lista1 {
+border-style: dotted; border-color: crimson; border-width: 5%;
+}
+
+/**/
+
+
+
+
+
+
+
